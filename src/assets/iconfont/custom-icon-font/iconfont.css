@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4118131 */
+  src: url('iconfont.woff2?t=1686560480379') format('woff2'),
+       url('iconfont.woff?t=1686560480379') format('woff'),
+       url('iconfont.ttf?t=1686560480379') format('truetype'),
+       url('iconfont.svg?t=1686560480379#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tubiaozhizuomoban-:before {
+  content: "\e60a";
+}
+

@@ -1,0 +1,200 @@
+// 字体图标
+@import '../assets/iconfont/index.css';
+
+// element-plus
+@import './element.scss';
+
+body {
+  background: #F1F6F8;
+}
+
+.page {
+  padding: 20px;
+  background: #fff;
+}
+
+.input {
+  width: 200px;
+}
+
+.color-link {
+  color: #409eff;
+}
+
+.ellipsis {
+  @include ellipsis()
+}
+
+.ellipsis-2 {
+  @include ellipsis-2()
+}
+
+.ellipsis-3 {
+  @include ellipsis-3()
+}
+.w {
+  &-150 {
+    width: 150px;
+  }
+}
+.ml {
+  &-5 {
+    margin-left: 5px;
+  }
+  &-10 {
+    margin-left: 10px;
+  }
+  &-15 {
+    margin-left: 15px;
+  }
+}
+.mt {
+  &-5 {
+    margin-top: 5px;
+  }
+  &-10 {
+    margin-top: 10px;
+  }
+  &-15 {
+    margin-top: 15px;
+  }
+  &-20 {
+    margin-top: 20px;
+  }
+  &-25 {
+    margin-top: 25px;
+  }
+  &-30 {
+    margin-top: 30px;
+  }
+}
+.mb {
+  &-5 {
+    margin-bottom: 5px;
+  }
+  &-10 {
+    margin-bottom: 10px;
+  }
+  &-15 {
+    margin-bottom: 15px;
+  }
+  &-20 {
+    margin-bottom: 20px;
+  }
+  &-25 {
+    margin-bottom: 25px;
+  }
+  &-30 {
+    margin-bottom: 30px;
+  }
+}
+.pt {
+  &-5 {
+    padding-top: 5px;
+  }
+  &-10 {
+    padding-top: 10px;
+  }
+  &-15 {
+    padding-top: 15px;
+  }
+  &-20 {
+    padding-top: 20px;
+  }
+  &-25 {
+    padding-top: 25px;
+  }
+  &-30 {
+    padding-top: 30px;
+  }
+}
+.pb {
+  &-5 {
+    padding-bottom: 5px;
+  }
+  &-10 {
+    padding-bottom: 10px;
+  }
+  &-15 {
+    padding-bottom: 15px;
+  }
+  &-20 {
+    padding-bottom: 20px;
+  }
+  &-25 {
+    padding-bottom: 25px;
+  }
+  &-30 {
+    padding-bottom: 30px;
+  }
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.flex {
+  display: flex;
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+.justify {
+  &-start {
+    justify-content: start;
+  }
+  &-center {
+    justify-content: center;
+  }
+}
+.items {
+  &-start {
+    align-items: start;
+  }
+  &-center {
+    align-items: center;
+  }
+}
+
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
+.text {
+  &-link {
+    color: $color-primary;
+  }
+}
+
+// 清除浮动
+.clearfix {
+  &::after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+// 表格操作按钮分割线
+.table-actions {
+  .el-button + .el-button,
+  .el-button + .el-dropdown {
+    margin-left: 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 1em;
+      margin: 0 12px 0 8px;
+      vertical-align: middle;
+      border-left: 1px solid #dcdfe6;
+    }
+  }
+}
