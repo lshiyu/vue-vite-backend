@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 登录
 export function login(data) {
   return request({
-    url: '/live/api/auth/login',
+    url: '/api/user/login',
     method: 'post',
     data
   })
@@ -12,7 +12,7 @@ export function login(data) {
 // 退出登录
 export function logout() {
   return request({
-    url: '/live/api/user/logout',
+    url: '/api/user/logout',
     method: 'get'
   })
 }
@@ -20,7 +20,7 @@ export function logout() {
 // 获取用户权限
 export function getPermissions() {
   return request({
-    url: '/live/api/user/user_permission_list',
+    url: '/api/user/user_permission_list',
     method: 'get'
   })
 }
