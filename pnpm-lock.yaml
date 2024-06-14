@@ -4,6 +4,7 @@ specifiers:
   '@babel/eslint-parser': ^7.22.5
   '@better-scroll/core': ^2.5.1
   '@iconify-json/ep': ^1.1.10
+  '@unocss/preset-rem-to-px': ^0.61.0
   '@unocss/reset': ^0.53.1
   '@vitejs/plugin-vue': ^4.1.0
   '@vueup/vue-quill': ^1.2.0
@@ -61,6 +62,7 @@ dependencies:
 devDependencies:
   '@babel/eslint-parser': 7.24.7_eslint@8.57.0
   '@iconify-json/ep': 1.1.15
+  '@unocss/preset-rem-to-px': 0.61.0
   '@vitejs/plugin-vue': 4.6.2_vite@4.5.3+vue@3.4.27
   eslint: 8.57.0
   eslint-plugin-vue: 9.26.0_eslint@8.57.0
@@ -905,6 +907,10 @@ packages:
     resolution: {integrity: sha512-wuaLjWCzKUisHUxo4pjIdzcimdSmVa2hMHA3V7wVFBiSFX96/s7l0bvhHGFF/gMjbOnvJ+y+lBl3VKqcj9kwbA==}
     dev: true
 
+  /@unocss/core/0.61.0:
+    resolution: {integrity: sha512-Y/Ly3LPIAzOBlWCdKBVzVzIaaWDsf+oWPIUZlaW7DL++WWypVBCghmxXIT5dyuMGXE560Hj92st4AkXfuVdxGQ==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants/0.53.6:
     resolution: {integrity: sha512-5MQD/9pIflZT5LXFx6qFUgPuVszFj+Pyq97UPI1YH4Lf4prDpfUtR4vKrXeMQv0XFvXqKluIWovgG9c6nrpg9w==}
     dependencies:
@@ -951,6 +957,12 @@ packages:
     dependencies:
       '@unocss/core': 0.53.6
       '@unocss/extractor-arbitrary-variants': 0.53.6
+    dev: true
+
+  /@unocss/preset-rem-to-px/0.61.0:
+    resolution: {integrity: sha512-dBaHhhmPjx7qI882q/9W/6jFww1Q/hhmWmOnw3gwUO1pbsrp7ADuNNtG688igimOarIskEBQaXpw1FBa4WqHeg==}
+    dependencies:
+      '@unocss/core': 0.61.0
     dev: true
 
   /@unocss/preset-tagify/0.53.6:

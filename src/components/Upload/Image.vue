@@ -5,7 +5,7 @@ import { ElMessage } from 'element-plus'
 const props = defineProps({
   maxCount: {
     type: Number,
-    defaulte: 1
+    default: 1
   },
   modelValue: {
     type: [String, Array],

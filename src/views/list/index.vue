@@ -4,6 +4,7 @@ import {
   departmentList,
   provinces
  } from './data'
+
 onMounted(() => {
   console.log('onmounted')
 })
@@ -13,7 +14,7 @@ const formData = ref({
 })
 const formColumn = ref([
   {
-    xType: 'Input',
+    fType: 'Input',
     label: '姓名',
     prop: 'name',
     clearable: true,
@@ -21,7 +22,7 @@ const formColumn = ref([
     offset: 0
   },
   {
-    xType: "Radio",
+    fType: "Radio",
     label: "性别",
     prop: "sex",
     span: 8,
@@ -37,24 +38,24 @@ const formColumn = ref([
     ]
   },
   {
-    xType: "InputNumber",
+    fType: "InputNumber",
     label: "年龄",
     prop: "age",
     min: 1,
     max: 120,
     "controls-position": "right",
-    step: 2,
+    step: 1,
     span: 8,
   },
   {
-    xType: "Select",
+    fType: "Select",
     label: "岗位",
     prop: "jobs",
     span: 8,
     options: jobsList,
   },
   {
-    xType: "Select",
+    fType: "Select",
     label: "部门",
     prop: "department",
     span: 8,
@@ -66,21 +67,21 @@ const formColumn = ref([
     options: departmentList,
   },
   {
-    xType: "DatePicker",
+    fType: "DatePicker",
     label: "出生日期",
-    type: "date",
+    type: "datetimerange",
     prop: "birthday",
     span: 8,
   },
   {
-    xType: "TimePicker",
+    fType: "TimePicker",
     label: "出生时间",
     prop: "birthTime",
     placeholder: "请选择时间",
     span: 8,
   },
   {
-    xType: "TimeSelect",
+    fType: "TimeSelect",
     label: "起床时间",
     prop: "getupTime",
     placeholder: "请选择时间",
@@ -90,7 +91,7 @@ const formColumn = ref([
     span: 8,
   },
   {
-    xType: "Checkbox",
+    fType: "Checkbox",
     label: "办公地区",
     prop: "officeArea",
     span: 8,
@@ -108,7 +109,6 @@ const baseForm = ref()
 
 function handleSubmit() {
   baseForm.value.formRef.validate((valid) => {
-    console.log(valid, '3333')
     if (valid) {
       console.log('submit!')
     } else {

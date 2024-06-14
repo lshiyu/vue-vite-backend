@@ -40,6 +40,10 @@ const props = defineProps({
   focus: {
     type: Function,
     default: () => () => {}
+  },
+  remoteMethod: {
+    type: Function,
+    default: () => () => {}
   }
 })
 
@@ -49,6 +53,7 @@ const Val = computed({
     emit('update:modelValue', v)
   }
 })
+
 </script>
 
 <template>
@@ -62,6 +67,7 @@ const Val = computed({
     @clear="props.clear ? props.clear() : false"
     @blur="props.blur ? props.blur($event) : false"
     @focus="props.focus ? props.focus($event) : false"
+    @remote-method="props.remoteMethod ? props.remoteMethod($event) : false"
   >
     <el-option
       v-for="item in options"

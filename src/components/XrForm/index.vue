@@ -69,7 +69,7 @@ defineExpose({
       >
 
         <component
-          :is="componentsTypes[item.xType]"
+          :is="componentsTypes[item.fType]"
           v-bind="item"
           v-model="props.formData[item.prop]"
         />
