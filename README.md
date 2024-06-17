@@ -120,9 +120,6 @@ import constants from '@/constants'
 storage.set(this.$constants.token)
 ```
 
-
-更多代码规范参考：[肖瘤前端开发规范](http://wiki.xiaoliuyisheng.cn/pages/viewpage.action?pageId=2491723)
-
 ### 2.2 代码提交
 
 每次提交代码时需要添加一个提交类型，例如：Feat 处方详情

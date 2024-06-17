@@ -10,7 +10,8 @@ onMounted(() => {
 })
 const formData = ref({
   name: '',
-  sex: ''
+  sex: '',
+  num: 1
 })
 const formColumn = ref([
   {
