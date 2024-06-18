@@ -11,7 +11,9 @@ onMounted(() => {
 const formData = ref({
   name: '',
   sex: '',
-  num: 1
+  num: 1,
+  current_page: 1,
+  per_page: 15
 })
 const formColumn = ref([
   {
@@ -128,5 +130,10 @@ function handleSubmit() {
         </div>
       </template>
     </xr-form>
+    <Pagination
+      v-model:page="formData.current_page"
+      v-model:size="formData.per_page"
+      :total="100"
+     />
   </div>
 </template>
